@@ -10,3 +10,18 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+
+## Project Overview
+It is a simple dashboard which can be used to track your sales, products, annual revenues , product market shares, It is fully customisable it can be built according to needs . The best thing about this dashboard is it can be built according to required needs.It is a responsive dashboard works on every screen sizes , Easily accessible from mobiles, Desktop or Tablets.
+
+#### Built using React+Vite Tailwindcss Lenis FramerMotion Recharts Lucide-React
+
+[Click here to view the DashShere Dashboard live ](https://dash-sphere.vercel.app/)
+
+## Project Sreenshots 
+![alt text](image.png)
+
+![alt text](image-1.png)
