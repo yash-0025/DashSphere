@@ -1,0 +1,322 @@
+@import "tailwindcss";
+/* index.css - Standalone with all config converted */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  :root {
+    /* Original hyper colors */
+    --hyper-1: #7E22CE;
+    --hyper-2: #06B6D4;
+    --hyper-3: #EF4444;
+    
+    /* Electric color palette */
+    --electric: #7E22CE;
+    --electric-light: #A855F7;
+    --electric-dark: #581C87;
+    
+    /* Neon color palette */
+    --neon: #06B6D4;
+    --neon-light: #22D3EE;
+    --neon-dark: #0891B2;
+    
+    /* Lava color palette */
+    --lava: #EF4444;
+    --lava-light: #F87171;
+    --lava-dark: #DC2626;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Original utilities */
+  .hyper-gradient {
+    background: linear-gradient(45deg, var(--hyper-1), var(--hyper-2), var(--hyper-3));
+    background-size: 200% 200%;
+  }
+  
+  .animate-delay-1 {
+    animation-delay: 0.5s;
+  }
+  
+  .animate-delay-2 {
+    animation-delay: 1s;
+  }
+
+  /* Font family utilities */
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Animation utilities */
+  .animate-gradient-shift {
+    animation: gradient-shift 8s ease infinite;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-gradient {
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  /* Electric color utilities */
+  .text-electric {
+    color: var(--electric);
+  }
+  
+  .text-electric-light {
+    color: var(--electric-light);
+  }
+  
+  .text-electric-dark {
+    color: var(--electric-dark);
+  }
+  
+  .bg-electric {
+    background-color: var(--electric);
+  }
+  
+  .bg-electric-light {
+    background-color: var(--electric-light);
+  }
+  
+  .bg-electric-dark {
+    background-color: var(--electric-dark);
+  }
+  
+  .border-electric {
+    border-color: var(--electric);
+  }
+  
+  .border-electric-light {
+    border-color: var(--electric-light);
+  }
+  
+  .border-electric-dark {
+    border-color: var(--electric-dark);
+  }
+
+  /* Neon color utilities */
+  .text-neon {
+    color: var(--neon);
+  }
+  
+  .text-neon-light {
+    color: var(--neon-light);
+  }
+  
+  .text-neon-dark {
+    color: var(--neon-dark);
+  }
+  
+  .bg-neon {
+    background-color: var(--neon);
+  }
+  
+  .bg-neon-light {
+    background-color: var(--neon-light);
+  }
+  
+  .bg-neon-dark {
+    background-color: var(--neon-dark);
+  }
+  
+  .border-neon {
+    border-color: var(--neon);
+  }
+  
+  .border-neon-light {
+    border-color: var(--neon-light);
+  }
+  
+  .border-neon-dark {
+    border-color: var(--neon-dark);
+  }
+
+  /* Lava color utilities */
+  .text-lava {
+    color: var(--lava);
+  }
+  
+  .text-lava-light {
+    color: var(--lava-light);
+  }
+  
+  .text-lava-dark {
+    color: var(--lava-dark);
+  }
+  
+  .bg-lava {
+    background-color: var(--lava);
+  }
+  
+  .bg-lava-light {
+    background-color: var(--lava-light);
+  }
+  
+  .bg-lava-dark {
+    background-color: var(--lava-dark);
+  }
+  
+  .border-lava {
+    border-color: var(--lava);
+  }
+  
+  .border-lava-light {
+    border-color: var(--lava-light);
+  }
+  
+  .border-lava-dark {
+    border-color: var(--lava-dark);
+  }
+
+  /* Background image utilities */
+  .bg-hyper {
+    background-image: linear-gradient(45deg, #7E22CE, #06B6D4, #EF4444);
+  }
+  
+  .bg-electric-gradient {
+    background-image: linear-gradient(45deg, #7E22CE, #A855F7);
+  }
+  
+  .bg-neon-gradient {
+    background-image: linear-gradient(45deg, #06B6D4, #22D3EE);
+  }
+
+  /* Text shadow utilities */
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.10);
+  }
+  
+  .text-shadow-md {
+    text-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 15px 30px rgba(0,0,0,0.11), 0 5px 15px rgba(0,0,0,0.08);
+  }
+
+  /* Ring color utilities for electric */
+  .ring-electric {
+    --tw-ring-color: var(--electric);
+  }
+  
+  .ring-electric-light {
+    --tw-ring-color: var(--electric-light);
+  }
+  
+  .ring-electric-dark {
+    --tw-ring-color: var(--electric-dark);
+  }
+
+  /* Ring color utilities for neon */
+  .ring-neon {
+    --tw-ring-color: var(--neon);
+  }
+  
+  .ring-neon-light {
+    --tw-ring-color: var(--neon-light);
+  }
+  
+  .ring-neon-dark {
+    --tw-ring-color: var(--neon-dark);
+  }
+
+  /* Ring color utilities for lava */
+  .ring-lava {
+    --tw-ring-color: var(--lava);
+  }
+  
+  .ring-lava-light {
+    --tw-ring-color: var(--lava-light);
+  }
+  
+  .ring-lava-dark {
+    --tw-ring-color: var(--lava-dark);
+  }
+
+  /* Shadow color utilities */
+  .shadow-electric {
+    --tw-shadow-color: var(--electric);
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+  
+  .shadow-neon {
+    --tw-shadow-color: var(--neon);
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+  
+  .shadow-lava {
+    --tw-shadow-color: var(--lava);
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+}
+
+/* Keyframes must be outside @layer */
+@keyframes gradient-shift {
+  0%, 100% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0); 
+  }
+  50% { 
+    transform: translateY(-20px); 
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-200 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--electric), var(--neon));
+  @apply rounded-full;
+}
+
+/* Dark mode support - automatically handled by Tailwind's dark mode */
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-electric {
+    background-color: var(--electric);
+  }
+  
+  .dark\:bg-neon {
+    background-color: var(--neon);
+  }
+  
+  .dark\:bg-lava {
+    background-color: var(--lava);
+  }
+  
+  .dark\:text-electric {
+    color: var(--electric);
+  }
+  
+  .dark\:text-neon {
+    color: var(--neon);
+  }
+  
+  .dark\:text-lava {
+    color: var(--lava);
+  }
+}
