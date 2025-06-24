@@ -1,4 +1,4 @@
-/
+
 import { LayoutDashboard, TrendingUp, Users, PieChart as PieChartIcon, Settings } from 'lucide-react';
 
 // Chart Colors for light and dark themes
