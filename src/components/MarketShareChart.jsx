@@ -34,12 +34,12 @@ const MarketShareChart = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-purple-900 via-gray-900 to-black p-6 rounded-2xl shadow-2xl border border-purple-500 overflow-hidden">
-      <h3 className="text-2xl font-bold text-white mb-6 text-center bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+    <div className="bg-gradient-to-br from-purple-900 via-gray-900 to-black p-2 sm:p-7 rounded-2xl shadow-2xl border border-purple-500 w-full max-w-full">
+      <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
         📊 Market Share Distribution
       </h3>
-      <div className="relative w-full h-[300px]">
-        <ResponsiveContainer width="100%" height="100%">
+      <div className="relative w-full h-[250px] pb-2">
+        <ResponsiveContainer width="100%" height="100%" >
           <PieChart>
             <defs>
               <filter id="textGlow">
@@ -85,7 +85,7 @@ const MarketShareChart = () => {
               color: '#fff',
               boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
             }} />
-            <Legend verticalAlign="bottom" height={36} wrapperStyle={{ color: '#E5E7EB', paddingTop: '20px' }} iconType="circle" />
+            <Legend verticalAlign="bottom" height={36} wrapperStyle={{ color: '#E5E7EB', paddingTop: '12px' }} iconType="circle" />
           </PieChart>
         </ResponsiveContainer>
       </div>

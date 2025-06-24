@@ -17,28 +17,28 @@ const DashboardOverview = () => {
         value="$12,345"
         icon={<DollarSign />}
         accentColor="electric"
-        className="h-full w-full"
+        className="h-full w-full border-purple-600"
       />
       <Card
         title="Active Users"
         value="1,567"
         icon={<Users />}
         accentColor="neon"
-        className="h-full w-full"
+        className="h-full w-full border-cyan-600"
       />
       <Card
         title="Pending Orders"
         value="89"
         icon={<CalendarDays />}
         accentColor="lava"
-        className="h-full w-full"
+        className="h-full w-full border-red-600"
       />
       <Card
         title="Growth Rate"
         value="+23.5%"
         icon={<TrendingUp />}
         accentColor="green"
-        className="h-full w-full"
+        className="h-full w-full border-green-600"
       />
     </motion.div>
   );
